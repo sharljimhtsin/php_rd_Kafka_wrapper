@@ -2,8 +2,12 @@
     "name": "xiazhengxin/php_rd_kafka_wrapper",
     "description": "a good tool to pull/push from RD_Kafka in PHP",
     "type": "library",
+    "keywords": ["rdKafka","php"],
+    "homepage": "https://github.com/sharljimhtsin/php_rd_Kafka_wrapper",
+    "license": "Apache License 2.0",
     "require": {
-        "kwn/php-rdkafka-stubs": "^1.2"
+        "kwn/php-rdkafka-stubs": "^1.2",
+        "php": ">=7.0.0"
     },
     "require-dev": {
         "kwn/php-rdkafka-stubs": "^1.2"
