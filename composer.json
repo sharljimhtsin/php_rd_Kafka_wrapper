@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": ["rdKafka","php"],
     "homepage": "https://github.com/sharljimhtsin/php_rd_Kafka_wrapper",
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "require": {
         "kwn/php-rdkafka-stubs": "^1.2",
         "php": ">=7.0.0"
