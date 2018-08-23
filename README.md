@@ -1,5 +1,6 @@
 # 很方便的RD_Kafka php 操作包装类
 
+## demo
 ```
 //通过静态方法获取 消费者主题
 $topic = MQ::getConsumer()->newTopic("test");
@@ -13,8 +14,25 @@ $mq->pullAllFromIt(function ($msg, $err) {
 //停止轮询
 $mq->stopPull();
 ```
+## 安装
 
-依赖:
+添加到 composer.json 项
+
+```json
+{
+    "require-dev": {
+        "xiazhengxin/php_rd_kafka_wrapper": "dev-master"
+    }
+}
+```
+
+更新 vendors 库
+
+```
+$ php composer.phar update xiazhengxin/php_rd_kafka_wrapper
+```
+
+## 依赖
 
 librdkafka: https://github.com/edenhill/librdkafka (系统动态链接库文件)
 
