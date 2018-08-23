@@ -1,0 +1,23 @@
+{
+    "name": "xiazhengxin/php_rd_kafka_wrapper",
+    "description": "a good tool to pull/push from RD_Kafka in PHP",
+    "type": "library",
+    "require": {
+        "kwn/php-rdkafka-stubs": "^1.2"
+    },
+    "require-dev": {
+        "kwn/php-rdkafka-stubs": "^1.2"
+    },
+    "authors": [
+        {
+            "name": "Xia Zheng Xin",
+            "email": "xzx@xiazhengxin.name"
+        }
+    ],
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
