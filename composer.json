@@ -15,7 +15,9 @@
     "authors": [
         {
             "name": "Xia Zheng Xin",
-            "email": "xzx@xiazhengxin.name"
+            "email": "xzx@xiazhengxin.name",
+            "homepage": "http://xiazhengxin.name",
+            "role": "Developer"
         }
     ],
     "repositories": {
