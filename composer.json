@@ -14,6 +14,16 @@
     "require-dev": {
         "kwn/php-rdkafka-stubs": "^1.2"
     },
+    "autoload": {
+        "psr-4": {
+            "TPUtil\\": "MQ/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TPUtil\\": "MQ/"
+        }
+    },
     "authors": [
         {
             "name": "Xia Zheng Xin",
