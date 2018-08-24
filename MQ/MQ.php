@@ -6,6 +6,8 @@
  * Time: 下午6:56
  */
 
+namespace TPUtil;
+
 use RdKafka\Conf;
 use RdKafka\Consumer;
 use RdKafka\ConsumerTopic;
@@ -188,5 +190,26 @@ class MQ
     static function getConsumerByConfig($config): Consumer
     {
         return new Consumer($config);
+    }
+
+    /**
+     * @param $kafkaCfgArr array
+     * @param array $topicCfgArr
+     * @return Conf
+     */
+    static function getKafkaConfig($kafkaCfgArr, $topicCfgArr = null): Conf
+    {
+        $config = new Conf();
+        foreach ($kafkaCfgArr as $k => $v) {
+            $config->set($k, $v);
+        }
+        if ($topicCfgArr && is_array($topicCfgArr)) {
+            $topicConfig = new TopicConf();
+            foreach ($topicCfgArr as $k => $v) {
+                $topicConfig->set($k, $v);
+            }
+            $config->setDefaultTopicConf($topicConfig);
+        }
+        return $config;
     }
 }
